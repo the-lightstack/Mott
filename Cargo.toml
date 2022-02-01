@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 lazy_static = "1.4.0"
+colored = "2"
+text_io = "0.1.9"
