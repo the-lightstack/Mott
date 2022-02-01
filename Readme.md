@@ -2,12 +2,12 @@
 
 # Introduction
 mott (from french "mot" = word) is (maybe) the first programming language, that 
-doesn't limit your creativity to preset keywords! 
-Get `if`, `let` and `var` out of here!
+doesn't limit your creativity to preset keywords!<br>
+Get `if`, `let` and `var` out of here!<br>
 All tokens are defined by the words length and it's case.
 
 # Operations
-This chapter will briefly go over all the possible operation in `mott` (9 in total)
+This chapter (as if there were more than one ...) will briefly go over all the possible operation in `mott` (9 in total)<br>
 *Remember*: All tokens/lines must end in an period/dot/full stop (`.`)!
 
 **Important**
@@ -17,13 +17,15 @@ This chapter will briefly go over all the possible operation in `mott` (9 in tot
 
 Table of Contents
 ================
-[Variables](#vars)
-[Printing](#print)
-[Input](#input)
-[Addition](#add)
-[Substraction](#sub)
-[Multiplication](#mul)
-[Division](#div)
+[Variables](#vars)<br>
+[Printing](#print)<br>
+[Input](#input)<br>
+[Addition](#add)<br>
+[Substraction](#sub)<br>
+[Multiplication](#mul)<br>
+[Division](#div)<br>
+[Branching](#branching)<br>
+[Labels](#labels)<br>
 
 ----------------
 
@@ -34,9 +36,9 @@ Table of Contents
 | Word Length | 4           |
 | Arg Count   | 1 - ∞       |
 
-This is most likely the most common operation you will use, since there are **no string/number constants** - huray!
+This is most likely the most common operation you will use, since there are **no string/number constants** - huray!<br>
 There are two types of Variables: Numbers (double) and Strings.
-The word you use as an identifier for "Var" will become the variables name or identifier.
+The word you use as an identifier for "Var" will become the variables name or identifier.<br>
 Let's see this in action:
 ```
 mott Zero. // eg. mott = 0
@@ -46,8 +48,8 @@ case Minus seven comma three five. // case = -7,35
 ```
 As you might have seen, you ~have to~ may finally spell out numbers.
 **Important**
-When declaring a **number*, the first argument has to be uppercase,
-meanwhile *strings* are indicated by a lowercase first arg.
+When declaring a **number*, the first argument has to be uppercase,<br>
+meanwhile *strings* are indicated by a lowercase first arg.<br>
 You can use the mot `Minus` to declare a negative number and `comma` to declare the numbers after 
 the - you guessed it - comma!
 
@@ -67,7 +69,7 @@ D form.
 B numb.
 P form numb.
 ```
-Another quick side note:
+Another quick side note:<br>
 Since it is impossible to get a space, newline or dot into a string, predefined vars exist for them.
 `newl` = "\n"
 `spce` = " "
@@ -80,7 +82,7 @@ Since it is impossible to get a space, newline or dot into a string, predefined 
 | Word Length | 1           |
 | Arg Count   | 2           |
 
-Input reads data from the user into the program - yay, interactivity!
+Input reads data from the user into the program - yay, interactivity!<br>
 Let's start with an example:
 ```
 r NumPls result. // Reads a number into "result"
@@ -88,8 +90,8 @@ k Bummmm numm.   // Does the same, but shows how much creativity you have :)
 
 l strInn vrbl.  // Reads a string into "vrbl" (reads until newline, not including it)
 ```
-If you have the pattern-recognition skills of a Neural Network you might have already figured out the syntax:
-<lowercaseLetter> <Uppercase-Word for Number/Lowercase for String> <destination>.
+If you have the pattern-recognition skills of a Neural Network you might have already figured out the syntax:<br>
+`<lowercaseLetter> <Uppercase-Word for Number/Lowercase for String> <destination>.`
 
 To see this in an actual (!) program, check out [this](./examples/add_1.mt) example.
 
