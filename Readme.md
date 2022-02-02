@@ -48,8 +48,8 @@ case Minus seven comma three five. // case = -7,35
 ```
 As you might have seen, you ~have to~ may finally spell out numbers.
 **Important**
-When declaring a **number*, the first argument has to be uppercase,<br>
-meanwhile *strings* are indicated by a lowercase first arg.<br>
+When declaring a *number*, the first argument has to be **uppercase**,<br>
+meanwhile *strings* are indicated by a **lowercase** first arg.<br>
 You can use the mot `Minus` to declare a negative number and `comma` to declare the numbers after 
 the - you guessed it - comma!
 
@@ -70,10 +70,10 @@ B numb.
 P form numb.
 ```
 Another quick side note:<br>
-Since it is impossible to get a space, newline or dot into a string, predefined vars exist for them.
-`newl` = "\n"
-`spce` = " "
-`dott` = "."
+Since it is impossible to get a space, newline or dot into a string, predefined vars exist for them.<br>
+`newl` = "\n"<br>
+`spce` = " "<br>
+`dott` = "."<br>
 
 ## Input
 | Key         | Value       |
@@ -225,4 +225,5 @@ See the example in the [BRANCHES](#branching) category.
 1. Go add `motts` to the programming languages you have mastered in your resume.
 2. Try to create something in motts and don't forget, that it is possible to write full sentences while writing code!
 4. Examples can be found in [/examples](./examples) (if you want to add one, create a PR)
+5. The file extension for \mott\ files is `.mt`
 3. Have a good day :) 
