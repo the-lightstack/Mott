@@ -12,7 +12,6 @@ use std::path::Path;
 use std::{env, fmt, process};
 use text_io::read;
 
-const DEBUG:bool = false;
 
 #[derive(PartialEq, Debug, Eq, Hash, Clone, Copy)]
 enum Case {
@@ -848,8 +847,10 @@ fn process_mt_file(filename: &str) {
 
         tokens.push(tok);
     }
-    if DEBUG{
-        println!("Tokens: {:?}",tokens);
+    unsafe{
+        if IS_DEBUG{
+            println!("Tokens: {:?}",tokens);
+        }
     }
 
     // Add "Exit" Token at end.
@@ -868,6 +869,7 @@ fn process_mt_file(filename: &str) {
         );
     }
 }
+static mut IS_DEBUG:bool = false;
 
 fn get_file_parse() {
     let commandline_args: Vec<String> = env::args().collect();
@@ -876,6 +878,14 @@ fn get_file_parse() {
         process::exit(1);
     }
 
+    if commandline_args.len() > 2{
+        if commandline_args[2] == "debug"{
+            unsafe{
+                IS_DEBUG = true;
+            }
+        }
+    }
+    
     let filename_to_run: String = commandline_args[1].clone();
     process_mt_file(&filename_to_run);
 }
